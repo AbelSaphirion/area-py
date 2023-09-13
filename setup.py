@@ -4,21 +4,19 @@ with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='example_pypi_package',
-    author='Tom Chen',
-    author_email='tomchen.org@gmail.com',
-    description='Example PyPI (Python Package Index) Package',
-    keywords='example, pypi, package',
+    name='areapy',
+    author='Strelchenko Aleksandr',
+    author_email='telikinez@gmail.com',
+    description='Simple python library for calculating area of various figures.',
+    keywords='area, pypi, package',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/tomchen/example_pypi_package',
+    url='https://github.com/AbelSaphirion/area-py',
     project_urls={
-        'Documentation': 'https://github.com/tomchen/example_pypi_package',
+        'Documentation': 'https://github.com/AbelSaphirion/area-py',
         'Bug Reports':
-        'https://github.com/tomchen/example_pypi_package/issues',
-        'Source Code': 'https://github.com/tomchen/example_pypi_package',
-        # 'Funding': '',
-        # 'Say Thanks!': '',
+        'https://github.com/AbelSaphirion/area-py/issues',
+        'Source Code': 'https://github.com/AbelSaphirion/area-py',
     },
     package_dir={'': 'src'},
     packages=setuptools.find_packages(where='src'),
@@ -39,15 +37,9 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
-    # install_requires=['Pillow'],
+    install_requires=[],
     extras_require={
         'dev': ['check-manifest'],
         # 'test': ['coverage'],
     },
-    # entry_points={
-    #     'console_scripts': [  # This can provide executable scripts
-    #         'run=examplepy:main',
-    # You can execute `run` in bash to run `main()` in src/examplepy/__init__.py
-    #     ],
-    # },
 )
